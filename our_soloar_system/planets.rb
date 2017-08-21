@@ -1,4 +1,4 @@
-require 'body'
+require_relative 'body'
 
 class Planets < Body
 

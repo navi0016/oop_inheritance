@@ -1,5 +1,9 @@
+
 class System
+
+  def initialize
   @bodies = []
+  end
 
 
   def display_bodies
@@ -7,7 +11,8 @@ class System
   end
 
   def add(body)
-    @bodies << body
+    @bodies << body unless @bodies.include?(body)
+
   end
 
   def total_mass
