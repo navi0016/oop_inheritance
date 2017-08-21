@@ -1,12 +1,13 @@
 class System
-  @@bodies = []
+  @bodies = []
+
 
   def display_bodies
-    @@bodies
+    @bodies
   end
 
-  def add(name,mass)
-    @@bodies << {name,mass}
+  def add(body)
+    @bodies << body
   end
 
   def total_mass
